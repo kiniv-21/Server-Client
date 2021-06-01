@@ -12,6 +12,6 @@ print('Server is Listening for Clients')
 while True:
     c,address = s.accept()
     message = c.recv(1024).decode()
-    print('Connected with ',address)
+    print('Connected with ',address,message)
     c.close()
 
